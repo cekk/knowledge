@@ -4,7 +4,7 @@
 
 ## List of contents
 
-- [[index|Plone]]
+- [Plone](plone/index.md)
 - [[todo]]
 - [[foam-tips]]
 - [[inbox]]
