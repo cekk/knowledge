@@ -5,12 +5,6 @@ https://community.plone.org/t/computed-field-for-dexterity/11405
 
 If the text value is not set, use this:
     
-    ```ruby
-    require 'redcarpet'
-    markdown = Redcarpet.new("Hello World!")
-    puts markdown.to_html
-    ```
-
 ```python
 class MyForm(Form):
     def updateWidgets(self):
