@@ -44,3 +44,9 @@ To have the complete control of the image (accessing it shell), we need to pass 
 ```bash
 > docker container run -it --name webserver nginx bash
 ```
+
+To access an already running docker image, we need to use `exec` command:
+
+```bash
+> docker container exec -it webserver bash
+```
