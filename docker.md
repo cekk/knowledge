@@ -50,3 +50,29 @@ To access an already running docker image, we need to use `exec` command:
 ```bash
 > docker container exec -it webserver bash
 ```
+
+## Networking
+
+`-p source:dest` makes a port forwarding from the image to localhost, so we can expose a port inside docker image (the port where the app/db/whatever is running inside the image) to a local port, and access to it.
+
+```bash
+> docker container port webserver
+```
+
+shows the port mapping of that container.
+
+## Access container informations
+
+```bash
+> docker container inspect webserver
+```
+
+Returns a json formatted list of informations about selected container (config, newtwork, etc)it.
+
+To filter only some needed informations, we can use `--format` argument:
+
+```bash
+ docker container inspect --format '{{ .NetworkSettings.IPAddress}}' webhost
+```
+
+Return only the container's ip addres (see the json structure to understand how to get other infos).
