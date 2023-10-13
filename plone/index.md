@@ -1,5 +1,6 @@
 # Plone
 
+- [Fields](fields.md)
 - [Resources registry](https://docs.plone.org/adapt-and-extend/theming/resourceregistry.html)
 - [Upgrade steps](upgrade_steps.md)
 - [Users](users.md)
